@@ -27,7 +27,7 @@ class website_tester():
 
     def send_email(self, recipient_email, email_body):
         sender_email = 'shreyas@nextelement.in'
-        sender_password = 'g00gle@it'
+        sender_password = '*********'
         message = MIMEMultipart()
         html = '''
                 <html>
@@ -125,8 +125,7 @@ class website_tester():
             self.website_check(url,self.headers)
 
         email_body = 'Your website checking result is as follows:' + ''.join(self.results)
-        # recipient_email = ['manjukiran@nextelement.in', 'mahesh@nextelement.in', 'ravim@nextelement.in', 'sharath.patel@nextelement.in',
-        #                     '\ndhanashree@nextelement.in','suganthi@nextelement.in']
+        # recipient_email = ['first@gmail.com', 'Second@gmail.com', 'thired@gmail.com']
         recipient_email = 'shreyas@nextelement.in'
         self.send_email(recipient_email, email_body)
 
